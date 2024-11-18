@@ -1,0 +1,114 @@
+/* emergency.css */
+
+/* Styling for the emergency container */
+.container {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+/* Title styling */
+h2 {
+    font-size: 2em;
+    color: #fffa;
+    margin-bottom: 20px;
+}
+
+/* Search bar styling */
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+/* Contact section styling */
+.contact-section {
+    margin-bottom: 30px;
+    background-color: #2e2e50;
+    border-radius: 10px;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for section headers */
+.section-header {
+    font-size: 1.5em;
+    color: #fffa;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Contact list styling */
+.contact-list {
+    max-height: 250px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.contact-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.contact-list::-webkit-scrollbar-thumb {
+    background-color: #5050a5;
+    border-radius: 3px;
+}
+
+/* Styling each contact */
+.contact {
+    background-color: #5050a5;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.contact strong {
+    display: block;
+    font-weight: 600;
+    color: #fffa;
+    margin-bottom: 5px;
+}
+
+.contact span {
+    display: block;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .section-header {
+        font-size: 1.3em;
+    }
+    
+    .contact-list {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-header {
+        font-size: 1.2em;
+    }
+    
+    .contact {
+        padding: 10px;
+    }
+}

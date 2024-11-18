@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>UMS Assist</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header>
+      <h1>UMS Assist</h1>
+      <p>Your ultimate helper for university management tasks.</p>
+   </header>
+
+   <section id="description">
+      <p>UMS Assist is designed to simplify essential tasks within the University Management System. 
+        <br>Whether you need a secure password, a site layout, or emergency contact numbers, UMS Assist has got you covered.
+        <br>Explore the tools below to enhance your university experience efficiently.</p>
+   </section>
+
+   <section id="features">
+      <div class="feature">
+         <h2>Password Generator</h2>
+         <p>Generate secure, unique passwords to protect your accounts and stay safe online.</p>
+         <button onclick="goToFeature('passwordGenerator')">Access Password Generator</button>
+      </div>
+
+      <div class="feature">
+         <h2>Sitemap</h2>
+         <p>Get a visual map of the university website for easy navigation and quick access to resources.</p>
+         <button onclick="goToFeature('sitemap')">View Sitemap</button>
+      </div>
+
+      <div class="feature">
+         <h2>Emergency Numbers</h2>
+         <p>Find quick access to important emergency contacts, ensuring help is always within reach.</p>
+         <button onclick="goToFeature('emergencyNumbers')">View Emergency Numbers</button>
+      </div>
+   </section>
+
+   <script>
+      function goToFeature(feature) {
+         if (feature === 'passwordGenerator') {
+            window.location.href = '/Password Generator/PG.html'; // Link to Password Generator page
+         } else if (feature === 'sitemap') {
+            window.location.href = 'https://ums.lpu.in/lpuums/Static%20Information/Siteplan16.jpg'; // Link to Sitemap page
+         } else if (feature === 'emergencyNumbers') {
+            window.location.href = '/Emergency Number/emergency.html'; // Link to Emergency Numbers page
+         }
+      }
+   </script>
+   
+</body>
+</html>
